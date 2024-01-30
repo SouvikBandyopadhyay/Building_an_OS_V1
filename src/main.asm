@@ -52,7 +52,7 @@ main:
 .halt:
 	jmp .halt				; infinite loop
 
-msg_hello: db 'Hello world!', ENDL, 0 ; string hello world
+msg_hello: db 'Hello Souvik Bandyopadhyay', ENDL, 0 ; string hello world
 
 times 510-($-$$) db 0 		; pad remaining space after the program in the 0th sector with zeros until last 2 bytes
 dw 0AA55h					; last 2 bytes are set to signature of OS 
